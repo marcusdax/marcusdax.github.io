@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luminall | The Data Flywheel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loading-screen">
+    <h1>Luminall Technologies</h1>
+    <p>Initializing Reality Intelligence...</p>
+  </div>
+
+  <!-- Scene 1: Old World -->
+  <section id="scene1" class="scene blackwhite">
+    <div class="overlay-text fade-in">
+      <h2>Once, the world was static.</h2>
+      <p>Steel and smoke shaped our systems — but they couldn’t think.</p>
+    </div>
+  </section>
+
+  <!-- Scene 2: The Spark -->
+  <section id="scene2" class="scene transition">
+    <div class="overlay-text">
+      <h2>Then came a new kind of current...</h2>
+      <p>Data with purpose. Not mined — but earned.</p>
+    </div>
+    <div class="spark"></div>
+  </section>
+
+  <!-- Scene 3: The Flywheel -->
+  <section id="scene3" class="scene color">
+    <canvas id="flywheelCanvas"></canvas>
+
+    <!-- SVG HUD Overlay -->
+    <svg class="hud" viewBox="0 0 800 800">
+      <circle cx="400" cy="400" r="180" stroke="rgba(0,255,224,0.3)" stroke-width="1" fill="none" />
+      <circle cx="400" cy="400" r="260" stroke="rgba(0,255,224,0.15)" stroke-width="1" fill="none" />
+      <circle cx="400" cy="400" r="340" stroke="rgba(0,255,224,0.1)" stroke-width="1" fill="none" />
+      <text x="400" y="70" text-anchor="middle" class="hud-label">ENGAGE</text>
+      <text x="700" y="420" text-anchor="middle" class="hud-label">LEARN</text>
+      <text x="400" y="760" text-anchor="middle" class="hud-label">MONETIZE</text>
+      <text x="100" y="420" text-anchor="middle" class="hud-label">REINFORCE</text>
+    </svg>
+
+    <div class="overlay-text bright">
+      <h2>The Luminall Data Flywheel</h2>
+      <p>Engage → Learn → Monetize → Reinforce</p>
+    </div>
+
+    <!-- AI Text Prompts -->
+    <div id="ai-prompts" class="ai-prompts"></div>
+  </section>
+
+  <!-- Scene 4: Future -->
+  <section id="scene4" class="scene future">
+    <div class="overlay-text">
+      <h2>The world becomes self-aware.</h2>
+      <p>See the unseen.</p>
+      <button onclick="replayAnimation()">Replay</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
